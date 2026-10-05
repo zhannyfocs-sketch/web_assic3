@@ -29,7 +29,10 @@ body {
   background-color: var(--primary-hover);
   color: #ffffff;
 }
-
+.special-img {
+  height: 200px;
+  object-fit: cover;
+}
 .manual-menu-section {
   padding: 3rem 1rem;
   background-color: #ffffff;
