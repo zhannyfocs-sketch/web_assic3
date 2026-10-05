@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Bakery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary-custom" href="#">Sweet Bakery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#specials">Specials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="py-5 bg-light-bakery">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <span class="badge bg-danger mb-2 d-none d-md-inline-block">Fresh Daily</span>
+          <h1 class="display-4 fw-bold">Artisanal Bakes & Sweet Treats</h1>
+          <p class="lead text-muted">Handcrafted with love, using organic flour, fresh berry fillings, and premium butter.</p>
+          <a href="#menu" class="btn btn-primary-custom btn-lg me-2">Explore Menu</a>
+          <span class="badge bg-success d-md-none mt-2 d-block">Open Now for Mobile Orders!</span>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="images/logobread.jpg" class="img-fluid rounded-4 shadow" alt="Fresh Bakery Spread">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="manual-menu-section">
+    <div class="menu-container">
+      <h2 class="menu-title">Handcrafted Menu</h2>
+      <p class="menu-subtitle">Responsive via pure CSS @media queries with Mobile-First design.</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="images/croissant.jpg" alt="Butter Croissant">
+          <div class="menu-card-body">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, golden-brown layered pastry baked fresh every morning.</p>
+            <span class="menu-price">$3.50</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="images/chocolatecake.jpg" alt="Chocolate Cake">
+          <div class="menu-card-body">
+            <h3>Chocolate Fudge Cake</h3>
+            <p>Rich dark chocolate ganache cake topped with fresh berries.</p>
+            <span class="menu-price">$6.00</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="images/berrytart.jpg" alt="Berry Tart">
+          <div class="menu-card-body">
+            <h3>Fresh Berry Tart</h3>
+            <p>Crispy tart shell filled with custard cream and raspberries.</p>
+            <span class="menu-price">$5.20</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img src="images/frenchmacarons.jpg" alt="Macarons">
+          <div class="menu-card-body">
+            <h3>French Macarons</h3>
+            <p>Assorted almond meringue cookies with cream fillings.</p>
+            <span class="menu-price">$4.50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="specials" class="py-5 bg-light-bakery">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-2">Weekly Specials (Task 2: Bootstrap Grid)</h2>
+      <p class="text-center text-muted mb-4">Built with Bootstrap col-12 col-md-6 col-lg-4 grid classes.</p>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/croissant.jpg" class="card-img-top" alt="Special Set" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Morning Combo</h5>
+              <p class="card-text text-muted flex-grow-1">Fresh croissant paired with our signature espresso blend.</p>
+              <span class="fw-bold text-primary-custom fs-5">$7.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/berrytart.jpg" class="card-img-top" alt="Special Berry" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Berry Box</h5>
+              <p class="card-text text-muted flex-grow-1">Selection of 3 fresh fruit tarts with custard filling.</p>
+              <span class="fw-bold text-primary-custom fs-5">$14.50</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/frenchmacarons.jpg" class="card-img-top" alt="Special Macarons" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Party Macaron Pack</h5>
+              <p class="card-text text-muted flex-grow-1">Box of 12 handcrafted macarons in assorted flavors.</p>
+              <span class="fw-bold text-primary-custom fs-5">$22.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6 order-1 order-md-2 text-center">
+          <img src="images/bakery.jpg" class="img-fluid rounded-4 shadow" alt="Baker preparing dough">
+        </div>
+        <div class="col-md-6 order-2 order-md-1">
+          <h2 class="fw-bold mb-3">Our Baking Philosophy</h2>
+          <p class="text-muted">We believe that great baking requires patience, top-tier ingredients, and traditional techniques. Every pastry is made from scratch with zero artificial preservatives.</p>
+          <button class="btn btn-outline-dark mt-2" data-bs-toggle="modal" data-bs-target="#infoModal">Learn Secret Ingredients</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-5 bg-light-bakery">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Frequently Asked Questions</h2>
+      <div class="accordion shadow-sm" id="bakeryFaq">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Do you offer gluten-free options?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#bakeryFaq">
+            <div class="accordion-body">
+              Yes! We have a dedicated selection of gluten-free tarts, macarons, and rice-flour breads available daily.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              How do I place a custom cake order?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#bakeryFaq">
+            <div class="accordion-body">
+              Custom cake orders must be placed at least 48 hours in advance through our contact form or in person.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2026 Sweet Bakery.</p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Our Quality Guarantee</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>We source 100% organic flour, real butter from local dairy farms, and natural vanilla beans to give our bakes their signature taste!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>

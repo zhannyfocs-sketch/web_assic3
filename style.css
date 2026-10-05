@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #c85a32;
+  --primary-hover: #a34423;
+  --bg-bakery: #fdfaf7;
+  --text-color: #5a4b45;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+.bg-light-bakery {
+  background-color: var(--bg-bakery);
+}
+
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--primary-hover);
+  color: #ffffff;
+}
+
+.manual-menu-section {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+.menu-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.25rem;
+}
+
+.menu-subtitle {
+  text-align: center;
+  color: #777777;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.menu-card {
+  border: 1px solid #eee3dc;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card-body {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.menu-card-body h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.menu-card-body p {
+  font-size: 0.9rem;
+  color: #666666;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.menu-price {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .menu-title {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .menu-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+}
